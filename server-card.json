@@ -1,0 +1,23 @@
+{
+  "name": "mcp-agent-sentinel",
+  "description": "Real-time Agentic Sentinel & Breaking-Change Intelligence Server for AI Agents",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "get_latest_news",
+      "description": "Recupera as notícias e registros de dados mais recentes de IA por categoria, persona e limite."
+    },
+    {
+      "name": "search_ai_news",
+      "description": "Pesquisa textual em tempo real no feed curado por palavras-chave ou modelos de IA."
+    },
+    {
+      "name": "get_niche_digest",
+      "description": "Gera um briefing/resumo executivo condensado e estruturado para um sub-nicho específico."
+    },
+    {
+      "name": "get_sources_status",
+      "description": "Retorna o status atual de funcionamento e última execução dos scrapers e fontes de dados."
+    }
+  ]
+}

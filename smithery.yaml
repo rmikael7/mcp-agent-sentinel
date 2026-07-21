@@ -1,0 +1,7 @@
+# smithery.yaml
+startCommand:
+  type: stdio
+  config:
+    command: node
+    args:
+      - dist/index.js
