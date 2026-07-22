@@ -5,7 +5,11 @@
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "mcp-data-infrastructure": "dist/index.js"
+    "mcp-agent-sentinel": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmikael7/mcp-agent-sentinel.git"
   },
   "scripts": {
     "build": "tsc",

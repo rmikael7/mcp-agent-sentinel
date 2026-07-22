@@ -24,14 +24,14 @@ function checkSetup() {
   console.log('2. Vá em "Features" -> "MCP Servers".');
   console.log('3. Clique em "+ Add New MCP Server".');
   console.log('4. Preencha os campos exatamente assim:\n');
-  console.log(`   - Name:    mcp-data-infrastructure`);
+  console.log(`   - Name:    mcp-agent-sentinel`);
   console.log(`   - Type:    command`);
   console.log(`   - Command: node "${absoluteDistPath}"\n`);
   console.log('------------------------------------------------------');
   console.log('🧪 PROMPT PARA TESTAR NO CHAT DO CURSOR AO VIVO:');
   console.log('------------------------------------------------------');
   console.log('Cole este prompt em qualquer chat do Cursor:');
-  console.log('\n> "Use a ferramenta get_latest_news do servidor mcp-data-infrastructure para me mostrar os últimos artigos de pesquisa do ArXiv e release notes para a persona dev."');
+  console.log('\n> "Use a ferramenta get_latest_news do servidor mcp-agent-sentinel para me mostrar os últimos artigos de pesquisa do ArXiv e release notes para a persona dev."');
   console.log('\n======================================================');
 }
 

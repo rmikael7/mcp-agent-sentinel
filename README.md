@@ -3,8 +3,8 @@
 > **Real-time Proactive Sentinel & Breaking-Change Intelligence Server for Autonomous AI Agents**  
 > *Compatible with Cursor IDE, Hermes, Claude Desktop, LangChain, AutoGen, and Windsurf*
 
-[![Smithery Verified](https://img.shields.io/badge/Smithery-Verified-blue.svg)](https://smithery.ai)
-[![Glama Listed](https://img.shields.io/badge/Glama-Listed-emerald.svg)](https://glama.ai/mcp)
+[![Smithery Verified](https://img.shields.io/badge/Smithery-Verified-blue.svg)](https://smithery.ai/server/rmicael)
+[![Glama Listed](https://img.shields.io/badge/Glama-Listed-emerald.svg)](https://glama.ai/mcp/servers/rmikael7/mcp-agent-sentinel)
 [![MCP Protocol Spec](https://img.shields.io/badge/MCP-2026.1_Spec-purple.svg)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -33,48 +33,26 @@ Most AI agents rely on **reactive search APIs** (like Tavily or Exa) where the a
 
 Data is automatically indexed and served according to consumer personas:
 
-- 🛠️ **`dev`**: Code diffs, breaking changes, SDK updates (`@modelcontextprotocol/server`), deprecations & bug fixes.
+- 🛠️ **`dev`**: Code diffs, breaking changes, SDK updates (`@modelcontextprotocol/sdk`), deprecations & bug fixes.
 - 📊 **`product`**: Pricing matrices, token efficiency, LLM benchmarks & feature availability.
-- 📈 **`investor`**: Frontier ArXiv research papers, agentic framework adoption & cloud distribution deals (Anthropic + AWS Bedrock).
+- 📈 **`investor`**: Frontier ArXiv research papers, agentic framework adoption & cloud distribution deals.
 - 📣 **`creator`**: Trending GitHub repos, viral AI tools & hooks for newsletters/youtube.
-
----
-
-## 🚀 Quickstart & Local Installation
-
-### 1. Build from Source
-
-```bash
-# Clone repository
-git clone https://github.com/agent-principal/mcp-agent-sentinel.git
-cd mcp-agent-sentinel
-
-# Install & Build
-npm install
-npm run build
-```
 
 ---
 
 ## ⚙️ Client Setup Configurations
 
-### 1. Claude Desktop App Setup
+### Option 1: Zero-Install Cloud Endpoint (Smithery 24/7)
 
-Locate your Claude Desktop configuration file:
-- 🪟 **Windows:** `%APPDATA%\Claude\claude_desktop_config.json` (`C:\Users\<YourUser>\AppData\Roaming\Claude\claude_desktop_config.json`)
-- 🍎 **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+Connect directly to the hosted server without running local Node.js processes:
 
-Add `mcp-agent-sentinel` to your `mcpServers` object:
+- **Smithery Server URL:** `https://mcp.smithery.run/rmicael`
 
 ```json
 {
   "mcpServers": {
     "mcp-agent-sentinel": {
-      "command": "node",
-      "args": [
-        "C:/Users/rmica/Agent Principal/projects/mcp-data-infrastructure/dist/index.js"
-      ],
-      "disabled": false
+      "url": "https://mcp.smithery.run/rmicael"
     }
   }
 }
@@ -82,30 +60,63 @@ Add `mcp-agent-sentinel` to your `mcpServers` object:
 
 ---
 
-### 2. Cursor IDE Setup
+### Option 2: Run via NPX (Recommended for Local Dev)
+
+#### 1. Claude Desktop App Setup
+Locate your Claude Desktop configuration file:
+- 🪟 **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+- 🍎 **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+Add `mcp-agent-sentinel`:
+
+```json
+{
+  "mcpServers": {
+    "mcp-agent-sentinel": {
+      "command": "npx",
+      "args": ["-y", "mcp-agent-sentinel@latest"]
+    }
+  }
+}
+```
+
+#### 2. Cursor IDE Setup
 Add under **Cursor Settings -> Features -> MCP Servers**:
 
 - **Name:** `mcp-agent-sentinel`
 - **Type:** `command`
-- **Command:** `node "C:/Users/rmica/Agent Principal/projects/mcp-data-infrastructure/dist/index.js"`
+- **Command:** `npx -y mcp-agent-sentinel@latest`
 
----
-
-### 3. Antigravity IDE & Hermes Setup
+#### 3. Antigravity IDE & Hermes Setup
 Add to your `~/.gemini/config/mcp_config.json` or `~/.hermes/config/mcp_config.json`:
 
 ```json
 {
   "mcpServers": {
     "mcp-agent-sentinel": {
-      "command": "node",
-      "args": [
-        "C:/Users/rmica/Agent Principal/projects/mcp-data-infrastructure/dist/index.js"
-      ],
-      "disabled": false
+      "command": "npx",
+      "args": ["-y", "mcp-agent-sentinel@latest"]
     }
   }
 }
+```
+
+---
+
+### Option 3: Build from Source
+
+```bash
+# 1. Clone repository
+git clone https://github.com/rmikael7/mcp-agent-sentinel.git
+cd mcp-agent-sentinel
+
+# 2. Install & Build
+npm install
+npm run build
+
+# 3. Add to your MCP config using the built file:
+# command: "node"
+# args: ["/path/to/mcp-agent-sentinel/dist/index.js"]
 ```
 
 ---
@@ -126,5 +137,8 @@ npm run verify-cursor
 
 ## 📄 License & Maintainers
 
+- **Repository:** [github.com/rmikael7/mcp-agent-sentinel](https://github.com/rmikael7/mcp-agent-sentinel)
+- **Glama.ai Hub:** [glama.ai/mcp/servers/rmikael7/mcp-agent-sentinel](https://glama.ai/mcp/servers/rmikael7/mcp-agent-sentinel)
+- **Smithery Cloud:** [smithery.ai/server/rmicael](https://smithery.ai/server/rmicael)
 - **Maintainers:** Agent Principal Core Team
 - **License:** MIT License
